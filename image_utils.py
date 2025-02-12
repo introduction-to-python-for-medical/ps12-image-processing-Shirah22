@@ -7,6 +7,7 @@ def load_image(path):
     image_array = np.array(image)
     return image_array
 
+
 def edge_detection(image_array):
     child_mean = np.mean(image_array, axis=2)
     
