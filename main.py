@@ -7,6 +7,7 @@ from skimage.filters import median
 from skimage.morphology import ball  # Used for noise suppression with ball structuring element
 
 
+
 def noise_suppression (image_array):
     clean_image = median(edge_image, ball(5))
     return clean_image  
